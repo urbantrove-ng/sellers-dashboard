@@ -16,10 +16,10 @@ export default function DashboardTopBar() {
           Hi, welcome to task management dashboard
         </p>
       </div>
-      <div className="flex mr-6 relative items-center  ">
+      <div className="flex ml-9 justify-center  ">
         <Link
           to="/myproducts"
-          className=" flex rounded-lg p-2 bg-gray-300  hover:bg-purple-700"
+          className=" flex  rounded-lg p-2 bg-gray-300  hover:bg-purple-700"
         >
           My Products
           <ChevronDown className="w-6 ml-2" />

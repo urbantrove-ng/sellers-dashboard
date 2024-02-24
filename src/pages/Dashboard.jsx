@@ -9,7 +9,7 @@ export default function Dashboard() {
       <DashboardTopBar />
       <div className="flex flex-col-2 border  bg-stone-200">
         <Dash />
-        <div className=" grow hidden md:block  w-8/12 p-4 border-l">
+        <div className=" grow hidden md:block  w-5/12 mt-9">
           <RightSideBar />
         </div>
       </div>

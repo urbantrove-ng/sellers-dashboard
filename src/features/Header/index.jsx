@@ -1,4 +1,4 @@
-import { Bell, CircleUserRound, DotIcon, Search } from "lucide-react";
+import { Bell, CircleUserRound, Search } from "lucide-react";
 import React from "react";
 
 export default function Header() {
@@ -25,8 +25,7 @@ export default function Header() {
           <div className="relative">
             <Bell />
             <div className="absolute -top-1 -right-1 bg-red-500 rounded-full w-4 h-4 flex items-center justify-center text-xs text-white">
-              <DotIcon />{" "}
-              {/* You can replace this with dynamic notification count */}
+              15{/* You can replace this with dynamic notification count */}
             </div>
           </div>
 
