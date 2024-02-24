@@ -47,12 +47,12 @@ const Calendar = () => {
   };
 
   return (
-    <div className=" mx-auto p-2  ">
+    <div className=" mx-auto  ">
       <div className="text-medium font-bold mb-4">
         {currentMonth.format("MMMM YYYY")}
       </div>
       <hr />
-      <div className="grid grid-cols-7 gap-6">
+      <div className="grid grid-cols-7  gap-9">
         {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
           <div key={day} className="text-center font-bold">
             {day}
@@ -65,7 +65,7 @@ const Calendar = () => {
               dateInfo.isCurrentMonth
                 ? dateInfo.day === today.date() &&
                   currentMonth.isSame(today, "month")
-                  ? "bg-blue-500 text-white rounded-xl"
+                  ? " text-green-700"
                   : "hover:bg-gray-200"
                 : "text-gray-500"
             }`}

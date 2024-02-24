@@ -37,6 +37,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <hr className="bg-green-700 h-1" />
     </div>
   );
 }

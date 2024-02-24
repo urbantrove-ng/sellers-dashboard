@@ -2,15 +2,6 @@ import { BarChart2, ChevronDown, Share2 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const periodOptions = [
-  { name: "Today", value: "TODAY" },
-  { name: "Yesterday", value: "YESTERDAY" },
-  { name: "This Week", value: "THIS_WEEK" },
-  { name: "Last Week", value: "LAST_WEEK" },
-  { name: "This Month", value: "THIS_MONTH" },
-  { name: "Last Month", value: "LAST_MONTH" },
-];
-
 export default function DashboardTopBar() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -18,14 +9,14 @@ export default function DashboardTopBar() {
     setDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div className="flex flex-cols-2 border-t-8  bg-neutral-100 ">
-      <div className="flex flex-col h-20 font-bold ml-9 justify-center ">
+    <div className="flex justify-between items-center  bg-neutral-100 ">
+      <div className="flex flex-col h-20 font-bold ml-9 justify-center  ">
         Dashboard
-        <p className="flex font-normal sm:text-sm">
+        <p className="relative font-normal text-sm">
           Hi, welcome to task management dashboard
         </p>
       </div>
-      <div className="flex  mr-6   items-center  ">
+      <div className="flex mr-6 relative items-center  ">
         <Link
           to="/myproducts"
           className=" flex rounded-lg p-2 bg-gray-300  hover:bg-purple-700"
