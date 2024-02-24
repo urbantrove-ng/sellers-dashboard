@@ -1,5 +1,6 @@
 import { Welcome } from "./components/Welcome";
 import DashboardStats from "./components/DashboardStats";
+import isss from "../../assets/logos.svg";
 
 import {
   BarChart2,

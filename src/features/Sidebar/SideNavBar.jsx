@@ -47,7 +47,7 @@ export default function SideNavBar() {
 
   return (
     <>
-      <div className="py-1 flex flex-col border border-r-8 w-full md:w-[20%]  h-screen relative  bg-stone-200 ">
+      <div className="py-1 flex flex-col border border-r-8  md:w-[20%]  relative  bg-stone-200 ">
         <div className="logo-div flex flex-wrap space-x-0 mt-6  items-center">
           <img src={logo} alt="logo" className="w-16" />
           <span className="block  font-extrabold">Urban Trove</span>

@@ -47,7 +47,7 @@ const Calendar = () => {
   };
 
   return (
-    <div className=" mx-  ">
+    <div className=" mx- ">
       <div className="text-medium font-bold mb-4">
         {currentMonth.format("MMMM YYYY")}
       </div>
