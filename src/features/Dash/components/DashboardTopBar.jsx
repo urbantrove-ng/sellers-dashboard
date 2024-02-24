@@ -1,4 +1,4 @@
-import { ChevronDown, Share2 } from "lucide-react";
+import { BarChart2, ChevronDown, Share2 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -21,25 +21,23 @@ export default function DashboardTopBar() {
     <div className="flex flex-cols-2 border-t-8  bg-neutral-100 ">
       <div className="flex flex-col h-20 font-bold ml-9 justify-center ">
         Dashboard
-        <span className="flex font-normal sm:text-sm">
+        <p className="flex font-normal sm:text-sm">
           Hi, welcome to task management dashboard
-        </span>
+        </p>
       </div>
-      <div className=" justify-end mr-6 hidden  items-center ">
+      <div className="flex  mr-6   items-center  ">
         <Link
           to="/myproducts"
-          className=" flex rounded-xl p-2 bg-gray-300  hover:bg-purple-700"
+          className=" flex rounded-lg p-2 bg-gray-300  hover:bg-purple-700"
         >
           My Products
-          <span className="flex ">
-            <ChevronDown className="w-6 ml-2" />
-          </span>
+          <ChevronDown className="w-6 ml-2" />
         </Link>
         <Link
           to="/performance"
-          className=" flex ml-2 space-x-1 rounded p-2  bg-gray-300  hover:bg-purple-700 "
+          className="  ml-2 space-x-1 rounded-lg p-2  bg-gray-300  hover:bg-purple-700 "
         >
-          <Share2 className="w-7 mr-2" />
+          <BarChart2 />
         </Link>
       </div>
     </div>
